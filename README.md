@@ -3,7 +3,7 @@
 This repository contains SQL scripts for two database systems:
 
 1. **University Course Enrollment System**
-2. **E-Commerce Order Management System**
+2. **Online Store Inventory and Orders System**
 
 ## University Course Enrollment System
 This database manages students, professors, courses, and enrollments.  

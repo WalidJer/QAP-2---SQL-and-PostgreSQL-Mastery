@@ -99,13 +99,13 @@ INSERT INTO order_items (order_id, product_id, quantity) VALUES
 --1.1) Retrieve the names and stock quantities of all products
 SELECT product_name, stock_quantity FROM products;
 
--- Retrieve the product names and quantites for one of the orders placed
+-- 1.2) Retrieve the product names and quantites for one of the orders placed
 SELECT product_name, quantity FROM products
 JOIN order_items ON products.product_id = order_items.product_id
 JOIN orders ON order_items.order_id = orders.order_id
 WHERE orders.order_id = 1; 
 
--- Retrieve all orders placed by a specific customer (includind ID's of what was ordered and quantities)
+-- 1.3) Retrieve all orders placed by a specific customer (including ID's of what was ordered and quantities)
 SELECT 
     orders.order_id, product_name, quantity,
     first_name || ' ' || last_name AS customer_full_name
