@@ -24,3 +24,26 @@ This database manages students, professors, courses, and enrollments.
 ✅ Retrieve enrolled students  
 ✅ Update student email  
 ✅ Remove a student from a course  
+
+
+---
+
+## Online Store Inventory and Orders System
+This database tracks products, customers, orders, and order items.  
+**Key Features:**
+✔️ Customers can place multiple orders.  
+✔️ Each order contains multiple products.  
+✔️ Stock quantity updates when orders are placed.  
+
+### Tables:
+- `products (product_id, product_name, price, stock_quantity)`
+- `customers (customer_id, first_name, last_name, email)`
+- `orders (order_id, customer_id, order_date)`
+- `order_items (order_id, product_id, quantity)`
+
+### SQL Operations Included:
+✅ Create tables  
+✅ Insert data  
+✅ Retrieve product stock & order details  
+✅ Update stock after purchase  
+✅ Delete orders 
